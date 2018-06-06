@@ -14,14 +14,18 @@ export default class Counter extends Component {
      * Increment counter.
      */
     increment() {
-        //...
+        this.setState( {
+            number: this.state.number + 1
+        })
     }
 
     /**
      * Decrement counter.
      */
     decrement() {
-        //...
+        this.setState( {
+            number: this.state.number - 1
+        })
     }
 
     render() {
