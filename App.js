@@ -12,7 +12,7 @@ import {
     View
 } from 'react-native';
 
-import Counter from "./src/components/Counter";
+import Counter from "./src/screens/Counter/CounterContainer";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +

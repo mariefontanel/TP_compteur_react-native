@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import {View, TouchableOpacity, Text} from 'react-native';
+import styles from './ButtonStyle';
 
 export default class Button extends Component {
     render() {
         return (
-            <View style={{ flex: 1,
-                justifyContent: 'center', alignItems: 'center', fontSize: 12
-                }}>
+            <View style={styles.button}>
                 <TouchableOpacity onPress={() => {
                     this.props.onPressButton()
                 }}>
