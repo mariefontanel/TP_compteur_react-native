@@ -23,11 +23,16 @@ export default styles = StyleSheet.create({
     boxDislike: {
         width: '35%',
         height: 50,
-        backgroundColor: 'orange'
+        backgroundColor: 'orange',
+        borderWidth: 1,
+        borderRadius: 20
     },
     boxLike: {
         width: '35%',
         height: 50,
-        backgroundColor: 'green'
+        backgroundColor: 'green',
+        borderWidth: 1,
+        borderRadius: 20
+
     }
 });
