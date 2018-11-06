@@ -9,7 +9,7 @@ export default class Button extends Component {
                 <TouchableOpacity onPress={() => {
                     this.props.onPressButton()
                 }}>
-                    <Text>{this.props.title}</Text>
+                    <Text style={styles.title}>{this.props.title}</Text>
                 </TouchableOpacity>
             </View>
         );

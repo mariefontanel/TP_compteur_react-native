@@ -8,14 +8,12 @@ export default class CounterContainer extends Component {
         this.state = {
             number: 0
         };
-        this.decrement = this.decrement.bind(this);
-        this.increment = this.increment.bind(this);
     }
 
     /**
      * Increment Counter.
      */
-    increment() {
+    increment = () => {
         this.setState({
             number: this.state.number + 1
         })
@@ -24,7 +22,7 @@ export default class CounterContainer extends Component {
     /**
      * Decrement Counter.
      */
-    decrement() {
+    decrement = () => {
         if (this.state.number > 0) {
             this.setState({
                 number: this.state.number - 1
@@ -32,10 +30,9 @@ export default class CounterContainer extends Component {
         }
     }
 
-
     render() {
         return(
-        <CounterView number={this.state.number} increment={this.increment} decrement={this.decrement}/>
+        <CounterView number={this.state.number} plus={this.increment} less={this.decrement}/>
         );
     }
 }

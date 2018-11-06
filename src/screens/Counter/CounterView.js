@@ -15,13 +15,13 @@ export default class CounterView extends Component {
                     <View style={styles.boxDislike}>
                         <Button
                             title={`J'aime pas`}
-                            onPressButton={this.props.decrement}
+                            onPressButton={this.props.less}
                         />
                     </View>
                     <View style={styles.boxLike}>
                         <Button
                             title={`J'aime`}
-                            onPressButton={this.props.increment}
+                            onPressButton={this.props.plus}
                         />
                     </View>
                 </View>
