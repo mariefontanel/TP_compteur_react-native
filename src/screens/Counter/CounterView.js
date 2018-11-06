@@ -8,7 +8,9 @@ export default class CounterView extends Component {
         return (
             <View style={styles.bigBox}>
 
-
+                <Text style={styles.title}>
+                    Compteur de Like !
+                </Text>
                 <Text style={styles.textCounter}>{this.props.number}</Text>
 
                 <View style={styles.boxLikeDislike}>

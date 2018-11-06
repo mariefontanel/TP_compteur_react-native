@@ -6,6 +6,11 @@ export default styles = StyleSheet.create({
         backgroundColor: '#444444',
         alignItems: 'center',
     },
+    title: {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
+    },
     bigBox: {
         flexDirection: 'column',
         justifyContent: 'center',
