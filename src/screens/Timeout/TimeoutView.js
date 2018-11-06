@@ -18,6 +18,14 @@ export default class TimeoutView extends Component {
                 >
                     <Text>Voir le compteur</Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        this.props.navigation.navigate('GeolocView');
+                    }}
+                >
+                    <Text>Géoloc</Text>
+                </TouchableOpacity>
             </View>
         );
     }
