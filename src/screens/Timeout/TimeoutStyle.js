@@ -4,16 +4,17 @@ export default styles = StyleSheet.create({
     title: {
         fontSize: 20,
         textAlign: 'center',
-        margin: 10,
+        margin: 20,
     },
     bigBox: {
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     button: {
         alignItems: 'center',
         backgroundColor: '#DDDDDD',
-        padding: 10
+        padding: 10,
+        margin: 10
     }
 });

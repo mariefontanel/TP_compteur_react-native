@@ -12,10 +12,15 @@ export default class UserListView extends React.Component {
     }
 
     getUsersData = () => {
-        axios.get('https://jsonplaceholder.typicode.com/users').then(res => {
+        axios.get('https://jsonplaceholder.typicode.com/users')
+            .then(res => {
             console.log(res);
             this.setState({ users: res.data });
         })
+            .catch( (error) => {
+                console.log('Erreur à afficher : ', error.message); // si j'enleve une lettre à l'url j'ai une erreur de Type : Network !
+                console.log('config ', error.config);
+            });
     }
 
     componentDidMount() {
@@ -31,11 +36,11 @@ export default class UserListView extends React.Component {
                     renderItem={
                         ({item}) =>
                             <TouchableOpacity
-
+                                style={{marginTop: '3%', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 10}}
                                 onPress={() => {
-                                this.props.navigation.navigate('UserView');
+                                this.props.navigation.navigate('UserView', {id: item});
                             }}>
-                                <Text>{item.username}</Text>
+                                <Text>{item.name}</Text>
                             </TouchableOpacity>
                     }
                 />
