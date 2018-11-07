@@ -24,7 +24,15 @@ export default class TimeoutView extends Component {
                         this.props.navigation.navigate('GeolocView');
                     }}
                 >
-                    <Text>Géoloc</Text>
+                    <Text>Accès Géoloc</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        this.props.navigation.navigate('Users');
+                    }}
+                >
+                    <Text>API Liste de Users</Text>
                 </TouchableOpacity>
             </View>
         );
