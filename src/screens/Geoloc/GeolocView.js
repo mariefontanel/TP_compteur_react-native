@@ -29,10 +29,10 @@ class Geolocation extends Component {
 
     render() {
         return (
-            <View style={{ flexGrow: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>Vous êtes ici :</Text>
-                <Text>Latitude: {this.state.latitude}</Text>
-                <Text>Longitude: {this.state.longitude}</Text>
+            <View style={{ flexGrow: 1, alignItems: 'center', marginTop: 50 }}>
+                <Text style={{fontSize: 18, marginBottom: 30}}>Voici vos coordonnées GPS :</Text>
+                <Text style={{fontSize: 18, margin: 30}}>Latitude: {this.state.latitude}</Text>
+                <Text style={{fontSize: 18, margin: 5}}>Longitude: {this.state.longitude}</Text>
                 {this.state.error ? <Text>Error: {this.state.error}</Text> : null}
             </View>
         );

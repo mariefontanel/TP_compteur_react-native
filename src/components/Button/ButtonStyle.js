@@ -7,7 +7,7 @@ export default styles = StyleSheet.create({
         alignItems: 'center',
     },
     title: {
-        fontSize: 22,
-        color: 'white'
+        fontSize: 18,
+        color: '#555B6E'
     }
 });

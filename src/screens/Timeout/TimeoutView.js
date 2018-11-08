@@ -8,7 +8,7 @@ export default class TimeoutView extends Component {
             <View style={styles.bigBox}>
 
                 <Text style={styles.title}>
-                    Changement de page réussi :-)
+                    Naviguez selon vos envies :-)
                 </Text>
                 <TouchableOpacity
                     style={styles.button}
@@ -16,7 +16,7 @@ export default class TimeoutView extends Component {
                         this.props.navigation.navigate('Counter');
                     }}
                 >
-                    <Text>Voir le compteur</Text>
+                    <Text style={styles.text}>Accès au compteur</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.button}
@@ -24,7 +24,7 @@ export default class TimeoutView extends Component {
                         this.props.navigation.navigate('GeolocView');
                     }}
                 >
-                    <Text>Accès Géoloc</Text>
+                    <Text style={styles.text}>Coordonnées GPS</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.button}
@@ -32,9 +32,18 @@ export default class TimeoutView extends Component {
                         this.props.navigation.navigate('Users');
                     }}
                 >
-                    <Text>API Liste de Users</Text>
+                    <Text style={styles.text}>API Liste de Users</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        this.props.navigation.navigate('LoginView');
+                    }}
+                >
+                    <Text style={styles.text}>Formulaire de Login</Text>
                 </TouchableOpacity>
             </View>
         );
     }
 }
+

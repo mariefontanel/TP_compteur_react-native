@@ -3,26 +3,21 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 export default class UserView extends React.Component {
 
-    componentWillMount(){
-        const {param} = this.props.navigation.state.params;
-    }
-
-     render() {
+    render() {
+        const {navigation} = this.props.navigation.state.params.id;
         return (
-            <View style={styles.container}>
-                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                    <Text>page de détails</Text>
-                    <Text></Text>
+        <View style={styles.container}>
+                    <View style={{ flex: 1, alignItems: 'center', marginTop: 20}}>
+                        <Text style={{fontSize: 17}}>Page info de l'utilisateur</Text>
+                    </View>
                 </View>
-            </View>
-        );
+            );
     }
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
         backgroundColor: '#F5FCFF',
     }
 });

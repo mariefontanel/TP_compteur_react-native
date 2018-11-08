@@ -30,6 +30,7 @@ export default class UserListView extends React.Component {
     render() {
         return (
             <View>
+                <Text style={{fontSize: 17, textAlign: 'center', marginTop: 15, textDecorationLine: 'underline'}}>Listes des utilisateurs</Text>
             <FlatList
                     data={this.state.users}
                     keyExtractor={(item) => item.key}
@@ -40,7 +41,7 @@ export default class UserListView extends React.Component {
                                 onPress={() => {
                                 this.props.navigation.navigate('UserView', {id: item});
                             }}>
-                                <Text>{item.name}</Text>
+                                <Text># {item.name}</Text>
                             </TouchableOpacity>
                     }
                 />

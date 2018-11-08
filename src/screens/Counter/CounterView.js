@@ -1,4 +1,4 @@
-import {Text, View} from "react-native";
+import {Text, View, Image} from "react-native";
 import React, { Component } from 'react';
 import styles from './CounterStyle';
 import Button from "../../components/Button/Button";
@@ -9,8 +9,9 @@ export default class CounterView extends Component {
             <View style={styles.bigBox}>
 
                 <Text style={styles.title}>
-                    Compteur de Like !
+                    Code life
                 </Text>
+                <Image source={{uri: 'https://ljdchost.com/45460281_n.png'}} style={styles.img}/>
                 <Text style={styles.textCounter}>{this.props.number}</Text>
 
                 <View style={styles.boxLikeDislike}>
@@ -27,7 +28,6 @@ export default class CounterView extends Component {
                         />
                     </View>
                 </View>
-
             </View>
         );
     }

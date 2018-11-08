@@ -14,7 +14,11 @@ export default styles = StyleSheet.create({
     button: {
         alignItems: 'center',
         backgroundColor: '#DDDDDD',
-        padding: 10,
-        margin: 10
+        padding: 20,
+        margin: 10,
+        borderRadius: 8,
+    },
+    text: {
+        fontSize: 17
     }
 });

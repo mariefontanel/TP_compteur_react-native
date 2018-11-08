@@ -18,7 +18,8 @@ export default styles = StyleSheet.create({
     },
     textCounter: {
         textAlign: 'center',
-        fontSize: 22
+        fontSize: 22,
+        margin: 10
     },
     boxLikeDislike: {
         flexDirection: 'row',
@@ -28,16 +29,21 @@ export default styles = StyleSheet.create({
     boxDislike: {
         width: '35%',
         height: 50,
-        backgroundColor: 'orange',
+        backgroundColor: '#FFD6BA',
         borderWidth: 1,
-        borderRadius: 20
+        borderRadius: 20,
+        margin: 5
     },
     boxLike: {
         width: '35%',
         height: 50,
-        backgroundColor: 'green',
+        backgroundColor: '#BEE3DB',
         borderWidth: 1,
-        borderRadius: 20
-
+        borderRadius: 20,
+        margin: 5
+    },
+    img: {
+        width: 300,
+        height: 300
     }
 });
